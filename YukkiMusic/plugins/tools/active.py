@@ -11,9 +11,9 @@ from pyrogram import filters
 from pyrogram.types import Message
 
 from strings import get_command
-from YukkiMusic import app
-from YukkiMusic.misc import SUDOERS
-from YukkiMusic.utils.database.memorydatabase import (
+from JooxMusic import app
+from JooxMusic.misc import SUDOERS
+from JooxMusic.utils.database.memorydatabase import (
     get_active_chats, get_active_video_chats)
 
 # Commands
@@ -24,7 +24,7 @@ ACTIVEVIDEO_COMMAND = get_command("ACTIVEVIDEO_COMMAND")
 @app.on_message(filters.command(ACTIVEVC_COMMAND) & SUDOERS)
 async def activevc(_, message: Message):
     mystic = await message.reply_text(
-        "Getting active voice chats.. Please hold"
+        "Mendapatkan Data.. Tunggu Sebentar"
     )
     served_chats = await get_active_chats()
     text = ""
