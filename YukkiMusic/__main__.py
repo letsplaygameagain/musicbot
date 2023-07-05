@@ -17,7 +17,7 @@ from pytgcalls.exceptions import NoActiveGroupCall
 import config
 from config import BANNED_USERS
 from JooxMusic import LOGGER, app, userbot
-from JooxMusic.core.call import Yukki
+from JooxMusic.core.call import Joox
 from JooxMusic.plugins import ALL_MODULES
 from JooxMusic.utils.database import get_banned_users, get_gbanned
 
@@ -72,7 +72,7 @@ async def init():
     except:
         pass
     await Yukki.decorators()
-    LOGGER("HooxMusic").info("Joox Music Bot Started Successfully")
+    LOGGER("JooxMusic").info("Joox Music Bot Started Successfully")
     await idle()
 
 
