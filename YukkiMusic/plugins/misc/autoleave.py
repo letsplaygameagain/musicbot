@@ -11,9 +11,9 @@ import asyncio
 from datetime import datetime
 
 import config
-from YukkiMusic import app
-from YukkiMusic.core.call import Yukki, autoend
-from YukkiMusic.utils.database import (get_client, is_active_chat,
+from JooxMusic import app
+from JooxMusic.core.call import Yukki, autoend
+from JooxMusic.utils.database import (get_client, is_active_chat,
                                        is_autoend)
 
 
